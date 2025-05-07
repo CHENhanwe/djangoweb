@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web1:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=dj2.settings
+      - DB_HOST=db  # 需要确保这是正确的主机名或IP
+      - DB_PORT=3306
+    volumes:
+      - .:/app
+      - ./media:/app/media
