@@ -1,0 +1,8 @@
+django==2.0
+django-threadlocals
+pymysql
+click
+requests
+xlrd
+python-alipay-sdk
+django-silk
